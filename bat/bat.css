@@ -1,0 +1,90 @@
+.main {
+    width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.bat {
+    display: flex;
+    align-items: center;
+}
+
+.bat_body {
+    width: 300px;
+    height: 90px;
+
+    background: #ffffff;
+
+    border: 8px solid black;
+}
+
+.eneger_red {
+    width: 30%;
+    height: 100%;
+    background-color: red;
+}
+
+.bat_nos {
+    background-color: black;
+    height: 40px;
+    width: 13px;
+}
+
+
+.eneger_green {
+    height: 100%;
+    width: 100%;
+
+    background-color: green;
+}
+
+.eneger_yellow {
+    height: 100%;
+    width: 60%;
+
+    background-color: yellow;
+
+}
+
+.eneger_charging{
+    height: 100%;
+    width: 0%;
+
+    background-color: red;
+
+    animation-name: bat-charging;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bat-charging {
+    0% {
+        height: 100%;
+        width: 0%;
+    
+        background-color: red;
+    }
+
+    60% {
+        height: 100%;
+        width: 60%;
+    
+        background-color: yellow;    
+    }
+
+    80% {
+        height: 100%;
+        width: 80%;
+    
+        background-color: yellow;    
+    }
+
+    100%{
+        width: 100%;
+        background-color: rgb(69, 240, 27);
+    }
+}
