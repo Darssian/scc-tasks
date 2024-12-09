@@ -1,0 +1,28 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.linear_body {
+    height: 30px;
+    width: 500px;
+
+    background-color: #fff;
+    overflow: hidden;
+
+    border-radius:30px;
+    border-style: solid;
+}
+.linear_progress {
+    height: 100%;
+    background-color:aqua;
+}
+.progress-full {
+    width: 100%;
+}
+.progress-middle {
+    width: 50%;
+}
+.progress-none {
+    display: none;
+}
