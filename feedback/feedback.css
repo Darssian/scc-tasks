@@ -81,6 +81,12 @@
 @media(max-width: 460px) {
     .pipka {
         display: block;
+        padding: 10px;
+    }
+
+    .pipka:hover {
+        font-size: 0px;
+        background: none;
     }
 
     .feedback_text span {
@@ -88,14 +94,15 @@
         transform: none;
         bottom: 0;
         left: 0;
-
     }
+    
 
     .feedback_text {
         height: auto;
         width: 100%;
 
         border-radius: 0%;
+        padding: 5px 0;
     }
 
     .feedback_body {
